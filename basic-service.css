@@ -1,0 +1,266 @@
+/* --- Header Styling --- */
+header {
+    position: sticky;
+    /* Scroll karte hue top pe rahe */
+    top: 0;
+    background: #0a1f44;
+    /* Dark blue background */
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 40px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+    z-index: 1000;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+header .logo {
+    font-size: 24px;
+    font-weight: bold;
+    letter-spacing: 1px;
+}
+
+header nav a {
+    color: white;
+    margin-left: 25px;
+    text-decoration: none;
+    font-weight: 600;
+    transition: 0.3s;
+}
+
+header nav a:hover {
+    color: #ff6600;
+    /* Hover orange effect */
+}
+
+/* --- Optional WhatsApp button --- */
+header .whatsapp-btn {
+    display: flex;
+    align-items: center;
+    background: #25D366;
+    padding: 8px 15px;
+    border-radius: 6px;
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+header .whatsapp-btn img {
+    width: 22px;
+    margin-right: 8px;
+}
+
+header .whatsapp-btn:hover {
+    background: #128c7e;
+}
+
+/* --- Responsive Header --- */
+@media screen and (max-width: 768px) {
+    header {
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 15px 20px;
+    }
+
+    header nav {
+        margin-top: 10px;
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    header nav a {
+        margin-left: 0;
+        margin-right: 15px;
+        margin-bottom: 5px;
+    }
+}
+
+/* --- Page Hero --- */
+.page-hero {
+    background: linear-gradient(rgba(10, 31, 68, 0.8), rgba(10, 31, 68, 0.8)),
+        url('https://images.unsplash.com/photo-1581090700227-1e8a9a9c6c64') center/cover no-repeat;
+    color: white;
+    text-align: center;
+    padding: 100px 20px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.page-hero h1 {
+    font-size: 48px;
+    margin-bottom: 15px;
+}
+
+.page-hero p {
+    font-size: 20px;
+}
+
+/* --- Content Section --- */
+.content-section {
+    padding: 50px 20px;
+    max-width: 900px;
+    margin: auto;
+    line-height: 1.8;
+    color: #333;
+}
+
+.content-section h2 {
+    color: #0a1f44;
+    margin-bottom: 20px;
+    font-size: 32px;
+    border-bottom: 3px solid #ff6600;
+    display: inline-block;
+    padding-bottom: 5px;
+}
+
+.content-section ul {
+    margin-top: 15px;
+    list-style-type: disc;
+    padding-left: 20px;
+}
+
+.content-section ul li {
+    margin-bottom: 10px;
+}
+
+/* --- Pricing Section --- */
+.pricing-section {
+    background: #f4f6f9;
+    padding: 60px 20px;
+    text-align: center;
+}
+
+.pricing-section h2 {
+    font-size: 36px;
+    margin-bottom: 40px;
+    color: #0a1f44;
+}
+
+.pricing-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+    justify-content: center;
+}
+
+.price-card {
+    background: white;
+    padding: 30px 25px;
+    width: 320px;
+    border-radius: 12px;
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15);
+    transition: 0.3s;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.price-card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 12px 35px rgba(0, 0, 0, 0.2);
+}
+
+.price-card h3 {
+    color: #0a1f44;
+    font-size: 24px;
+    margin-bottom: 15px;
+}
+
+.price-card h2 {
+    font-size: 28px;
+    color: #ff6600;
+    margin-bottom: 20px;
+}
+
+.price-card ul {
+    text-align: left;
+    padding-left: 20px;
+    margin-bottom: 20px;
+    line-height: 1.7;
+}
+
+.price-btn {
+    padding: 12px 20px;
+    background: #25D366;
+    color: white;
+    text-decoration: none;
+    text-align: center;
+    border-radius: 6px;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.price-btn:hover {
+    background: #128c7e;
+}
+
+/* --- Call To Action Section --- */
+.cta-section {
+    background: #0a1f44;
+    color: white;
+    text-align: center;
+    padding: 70px 20px;
+}
+
+.cta-section h2 {
+    font-size: 36px;
+    margin-bottom: 20px;
+}
+
+.cta-section p {
+    font-size: 20px;
+    margin-bottom: 30px;
+}
+
+.cta-btn {
+    display: inline-block;
+    padding: 15px 30px;
+    background: #ff6600;
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 8px;
+    transition: 0.3s;
+}
+
+.cta-btn:hover {
+    background: #e65c00;
+}
+
+/* --- Footer --- */
+footer {
+    background: #111;
+    color: white;
+    text-align: center;
+    padding: 25px 20px;
+    font-size: 14px;
+}
+
+/* --- Responsive --- */
+@media screen and (max-width: 768px) {
+    .pricing-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .page-hero h1 {
+        font-size: 36px;
+    }
+
+    .page-hero p {
+        font-size: 18px;
+    }
+
+    .content-section h2 {
+        font-size: 28px;
+    }
+
+    .cta-section h2 {
+        font-size: 28px;
+    }
+
+    .cta-section p {
+        font-size: 18px;
+    }
+}

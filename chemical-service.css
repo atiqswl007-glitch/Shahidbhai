@@ -1,0 +1,254 @@
+/* Global Styles */
+body {
+    margin: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    line-height: 1.7;
+    color: #333;
+    background: #f8f9fa;
+}
+
+h1,
+h2,
+h3 {
+    color: #0a1f44;
+}
+
+a {
+    text-decoration: none;
+}
+
+/* Header */
+header.main-header {
+    position: sticky;
+    top: 0;
+    background: #0a1f44;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 40px;
+    z-index: 999;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+}
+
+header .logo {
+    font-size: 24px;
+    font-weight: bold;
+    color: white;
+}
+
+header nav.nav-menu a {
+    color: white;
+    margin-left: 25px;
+    font-weight: 600;
+    transition: 0.3s;
+}
+
+header nav.nav-menu a:hover {
+    color: #ff6600;
+}
+
+header .header-whatsapp {
+    display: flex;
+    align-items: center;
+    background: #25D366;
+    padding: 8px 15px;
+    border-radius: 6px;
+    font-weight: bold;
+    color: white;
+    transition: 0.3s;
+}
+
+header .header-whatsapp img {
+    width: 22px;
+    margin-right: 8px;
+}
+
+header .header-whatsapp:hover {
+    background: #128c7e;
+}
+
+/* Hero Section */
+.page-hero {
+    background: linear-gradient(rgba(10, 31, 68, 0.7), rgba(10, 31, 68, 0.7)), url('assets/overhaul-bg.jpg') center/cover no-repeat;
+    color: white;
+    text-align: center;
+    padding: 100px 20px;
+}
+
+.page-hero h1 {
+    font-size: 48px;
+    margin-bottom: 15px;
+}
+
+.page-hero p {
+    font-size: 20px;
+}
+
+/* Content Section */
+.content-section {
+    padding: 50px 20px;
+    max-width: 1000px;
+    margin: auto;
+}
+
+.content-section h2 {
+    font-size: 32px;
+    margin-bottom: 20px;
+    border-bottom: 3px solid #ff6600;
+    display: inline-block;
+    padding-bottom: 5px;
+}
+
+.content-section ul {
+    padding-left: 20px;
+    margin-top: 15px;
+}
+
+.content-section ul li {
+    margin-bottom: 10px;
+}
+
+/* Pricing Section */
+.pricing-section,
+.pricing-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+    justify-content: center;
+    margin-top: 30px;
+}
+
+.price-card {
+    background: white;
+    padding: 30px 25px;
+    width: 320px;
+    border-radius: 12px;
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15);
+    transition: all 0.3s ease;
+}
+
+.price-card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 12px 35px rgba(0, 0, 0, 0.2);
+}
+
+.price-card h3 {
+    color: #0a1f44;
+    font-size: 24px;
+    margin-bottom: 15px;
+}
+
+.price-card h2 {
+    font-size: 28px;
+    color: #ff6600;
+    margin-bottom: 20px;
+}
+
+.price-card ul {
+    text-align: left;
+    padding-left: 20px;
+    margin-bottom: 20px;
+    line-height: 1.7;
+}
+
+/* Buttons */
+.price-btn,
+.cta-btn {
+    display: inline-block;
+    padding: 12px 25px;
+    background: #25D366;
+    color: white;
+    font-weight: bold;
+    border-radius: 6px;
+    text-align: center;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+    transition: all 0.3s ease;
+}
+
+.price-btn:hover,
+.cta-btn:hover {
+    background: #128c7e;
+    transform: translateY(-3px);
+}
+
+/* CTA Section */
+.cta-section {
+    background: #ff6600;
+    color: white;
+    text-align: center;
+    padding: 50px 20px;
+    border-radius: 12px;
+    margin-top: 40px;
+}
+
+.cta-section h2 {
+    font-size: 32px;
+    margin-bottom: 15px;
+}
+
+.cta-section p {
+    font-size: 18px;
+    margin-bottom: 25px;
+}
+
+.cta-section .cta-btn {
+    background: white;
+    color: #ff6600;
+}
+
+/* Footer */
+footer {
+    background: #111;
+    color: white;
+    text-align: center;
+    padding: 25px 20px;
+    font-size: 14px;
+}
+
+/* Responsive */
+@media screen and (max-width: 768px) {
+    header.main-header {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    header nav.nav-menu {
+        margin-top: 10px;
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    header nav.nav-menu a {
+        margin-left: 0;
+        margin-right: 15px;
+        margin-bottom: 5px;
+    }
+
+    header .header-whatsapp {
+        margin-top: 10px;
+    }
+
+    .page-hero h1 {
+        font-size: 36px;
+    }
+
+    .page-hero p {
+        font-size: 18px;
+    }
+
+    .content-section h2 {
+        font-size: 28px;
+    }
+
+    .cta-section h2 {
+        font-size: 28px;
+    }
+
+    .cta-section p {
+        font-size: 16px;
+    }
+
+    .price-card {
+        width: 100%;
+    }
+}
